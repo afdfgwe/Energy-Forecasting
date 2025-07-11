@@ -126,7 +126,6 @@ class PowerDataset(Dataset):
 
 
 # --- 3. 模型定义 ---
-
 class LSTMModel(nn.Module):
     def __init__(self, input_features, hidden_dim, num_layers, output_len):
         super(LSTMModel, self).__init__()

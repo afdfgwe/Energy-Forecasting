@@ -536,8 +536,8 @@ if __name__ == '__main__':
         FEATURE_COLS = all_cols
         TARGET_COL = 'Global_active_power'
 
-        run_experiment(pred_len=90, train_data=train_data, test_data=test_data,scaler=scaler, feature_cols=FEATURE_COLS, target_col=TARGET_COL, time_feature_cols=time_cols)
+        run_experiment(pred_len=90, train_data=train_data, test_data=test_data, scaler=scaler,
+                       feature_cols=FEATURE_COLS, target_col=TARGET_COL, time_feature_cols=time_cols)
 
         run_experiment(pred_len=365, train_data=train_data, test_data=test_data,
                        scaler=scaler, feature_cols=FEATURE_COLS, target_col=TARGET_COL, time_feature_cols=time_cols)
-
